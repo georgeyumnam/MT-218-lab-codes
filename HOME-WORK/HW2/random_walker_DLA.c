@@ -51,7 +51,7 @@ void main() {
       
       rv = drand48();                    // creation of the random variable
       if ((rv>=0) && (rv <=0.1)) {      // this is for the traversal of the grain growth
-        xc++;                            // equally randomly moving towards all 3 directions (x+, x-, y-)
+        xc++;                            // equally ranodomly moving towards all 3 directions (x+, x-, y-)
       }                                  // y+ direction grain growth is enhanced
       if ((rv>0.1) && (rv <=0.2)) {     // 
         xc--;
@@ -71,11 +71,11 @@ void main() {
       
       printf("x=%ld, y=%ld\n",x,y);
       
-      if((x > 0) &&            // if not the seed (x coordinate)
+      if((y==MESHY/2) && (x > 0) &&            // if not the seed (x coordinate)
          (x < (MESHX-1)) &&    // if within mesh grid of x
          (y > 0) &&            // if not the seed (y coordinate)
          (y < ((2*MESHY)-1)) &&    // if within mesh grid of y
-         ((status[x+1][y]==1) || (status[x-1][y]==1) || (status[x][y-1]==1) || (status[x][y+1]==1)) ) {
+         ((status[x+1][y]==1) || (status[x-1][y]==1) /*|| (status[x][y-1]==1) || (status[x][y+1]==1))*/ ) {
                                // if any of the neighbours of (x,y) are populated  ----> then --> do the following:
         status[x][y] = 1;  // nucleate the (x,y) point
       
