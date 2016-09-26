@@ -21,38 +21,37 @@ void main() {
   
   long xc, yc;     // 
   
-  double rm;       //
-  double rnew;     // 
+  double rm;       // radius of growth
+  double rnew;     // newly updated radius
   double rv;       // random variable
   
-  double ang;
+  double ang;      // angle --- going to be randomly determined
   
   long npart=0;    
   rm = 0;
-  
   x=0; 
   y=0;
   
   while(rm < (MESHX/2)) {
     
-    rnew = rm + 5;
+    rnew = rm + 5;  // radius of 5 
     
-    ang   = 2.0*M_PI*drand48();
-    xc = rnew*cos(ang);
-    yc = rnew*sin(ang);
+    ang   = 2.0*M_PI*drand48(); // a random angle 
+    xc = rnew*cos(ang);         // the resolved x direction of the angle
+    yc = rnew*sin(ang);         // ------------ y ---------------------
     
-    if (((xc > -(MESHX/2)) && xc < (MESHX/2-1)) 
-      && (yc > -(MESHY/2)) && (yc < (MESHY/2-1))) {
-      x = xc + MESHX/2;
-      y = yc + MESHY/2;
+    if ( ((xc > -(MESHX/2)) && (xc < (MESHX/2-1))) 
+      && ((yc > -(MESHY/2)) && (yc < (MESHY/2-1))) ) {
+      x = xc + MESHX/2;         // the final x 
+      y = yc + MESHY/2;         // --------- y
     }
     
-    while((sqrt(xc*xc+yc*yc) < (rm + 50)) && 
-    (status[x][y]==0)) {
+    while((sqrt(xc*xc+yc*yc) < (rm + 50)) &&  // if within the circle for nucleation growth
+          (status[x][y]==0)) {                // if the lattices are not updated then---
       
       rv = drand48();    // creation of the random variable
-      if ((rv>=0) && (rv <=0.25)) {      // if the random variable is within this
-        xc++;
+      if ((rv>=0) && (rv <=0.25)) {      // this is for the traversal of the grain growth
+        xc++;                            // equally randomly moving towards all 4 directions
       }
       if ((rv>0.25) && (rv <=0.5)) {
         xc--;
