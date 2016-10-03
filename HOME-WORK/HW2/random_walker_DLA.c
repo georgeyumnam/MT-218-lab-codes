@@ -6,18 +6,21 @@
 #define MESHX 100
 #define MESHY 100
 
-int status[MESHX][2*MESHY];
+int status[MESHX][MESHY];
 
 void main() {
   
   long x, y;    // For initial iterations
   
   for (x=0; x<MESHX; x++) {
-    for (y=0; y<2*MESHY; y++) { 
+    for (y=0; y<MESHY; y++) { 
       status[x][y] = 0;   // initialization of status
+      if (x == MESHX/2){
+            status[x][y] = 1;  // The seed for nucleation is a line
+      }
     }
   }
-  status[MESHX/2][MESHY/2] = 1;  // The seed of the nucleation growth
+  //status[MESHX/2][MESHY/2] = 1;  // The seed of the nucleation growth
   
   long xc, yc;     // 
   
