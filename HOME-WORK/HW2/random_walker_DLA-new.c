@@ -78,11 +78,11 @@ void main() {
       
       if((x > 0)&&(x < (MESHX-1)) && (y > 0) && (y < (MESHY-1)) 
         && ((status[x+1][y]==1) || (status[x-1][y]==1) || (status[x][y-1]==1) 
-        || (status[x][y+1]==1))) {
+        || (status[x][y+1]==1))) {   // The selection crteria is same i.e. to update if the neighbours are updated
         status[x][y] = 1;
       
         if ((xc + yc) > rm) {
-          rm = xc + yc;
+          rm = (sqrt(xc*xc) + sqrt(yc*yc));
         }
         npart++;
         printf("Number of particles=%ld\n",npart);
@@ -94,7 +94,7 @@ void main() {
   fp= fopen("solid.dat","w");
   for (x=0; x < MESHX; x++) {
     for (y=0; y < MESHY; y++) {
-      fprintf(fp, "%ld %ld %le\n", x, y, status[x][y]*(( sqrt((x-(MESHX/2))*(x-(MESHX/2))) + sqrt((y-(MESHY/2))*(y-(MESHY/2))))/2) );
+      fprintf(fp, "%ld %ld %le\n", x, y, status[x][y]*((sqrt((x-(MESHX/2))*(x-(MESHX/2))) + sqrt((y-(MESHY/2))*(y-(MESHY/2))))/2));
     }
     fprintf(fp, "\n");
   }
