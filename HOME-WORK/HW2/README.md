@@ -18,6 +18,8 @@ Top view of the nucleation growth under biased conditions (biased along the posi
 ### fig2.png 
 Side views of fig1.png
 
+[![fig2.png](https://github.com/georgeyumnam/MT-218-lab-codes/blob/master/HOME-WORK/HW2/fig2.png)](https://github.com/georgeyumnam/MT-218-lab-codes/blob/master/HOME-WORK/HW2/fig2.png)
+
 ###  assignment-final.c
 The HOME-WORK code (This is the code which generated - fig1, fig2, fig3)
 This takes care of the biasing of the nucleation growth direction.
