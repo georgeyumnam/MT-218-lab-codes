@@ -12,6 +12,9 @@ Perform this for a case with a line seed.
 ### fig1.png
 Top view of the nucleation growth under biased conditions (biased along the positive x direction)
 
+[![fig1.png](https://github.com/georgeyumnam/MT-218-lab-codes/blob/master/HOME-WORK/HW2/fig1.png)](https://github.com/georgeyumnam/MT-218-lab-codes/blob/master/HOME-WORK/HW2/fig1.png)
+
+
 ### fig2.png 
 Side views of fig1.png
 
