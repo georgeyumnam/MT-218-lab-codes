@@ -7,6 +7,14 @@
 
 ## Results after compilation of the code:
 ### Consdering that the circles in the Olympics logo have a radius = 0.9 m 
+### Also, in order to preserve the geometry of the Olympic logo,
+### we have taken the circles with centers::
+### (-2,1) - blue
+### ( 0,1) - black
+### ( 2,1) - red
+### (-1,0) - yellow
+### ( 1,0) - red
+###
 ### Then the following is the area of the sections:::--->>
 ###
 ### Area of one circle.......................... = 3.0172e+00
