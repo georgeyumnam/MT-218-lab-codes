@@ -9,7 +9,13 @@
 ### Consdering that the circles in the Olympics logo have a radius = sqrt(3) m 
 ### Then the following is the area of the sections:::--->>
 ###
-### 1) Area of circle............... = 2.8274e+01
-### 2) Area of 3 junction........... = 2.9896e+00
-### 3) Area of 2 junction........... = 8.7766e+00
-### 4) Area of no intersection...... = 2.0616e+01
+### Area of one circle.......................... = 3.0172e+00
+### Area of 3 junction.......................... = 0.0000e+00
+### Area of 2 junction.......................... = 2.0364e+00
+### Area of no intersection..................... = 1.1008e+01
+### 
+### Total area (ANALYTIC) with double counting.. = 1.5086e+01
+### Total area (COMPUTED) with double counting.. = 1.3048e+01
+### 
+###  
+### 
