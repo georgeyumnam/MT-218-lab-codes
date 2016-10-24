@@ -6,7 +6,7 @@
 [![olympic_logo](http://mrottocollection.com.ar/wp-includes/olympics-logo-png-i18.png)](http://mrottocollection.com.ar/wp-includes/olympics-logo-png-i18.png)
 
 ## Results after compilation of the code:
-### Consdering that the circles in the Olympics logo have a radius = sqrt(3) m 
+### Consdering that the circles in the Olympics logo have a radius = 0.9 m 
 ### Then the following is the area of the sections:::--->>
 ###
 ### Area of one circle.......................... = 3.0172e+00
