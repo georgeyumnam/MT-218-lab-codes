@@ -3,6 +3,8 @@
 ##  The stated problem:
 ### Take the olympic logo and analyse the area of the circles. Report the area of the intersection of three circles, two circles and the area without any intersections.
 
+[![olympic_logo](http://mrottocollection.com.ar/wp-includes/olympics-logo-png-i18.png)](http://mrottocollection.com.ar/wp-includes/olympics-logo-png-i18.png)
+
 ## Results after compilation of the code:
 ### Consdering that the circles in the Olympics logo have a radius = sqrt(3) m 
 ### Then the following is the area of the sections:::--->>
