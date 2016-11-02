@@ -9,20 +9,20 @@
 int status[MESHX][MESHY];
 
 void main() {
-  FILE *fpp;
+  //FILE *fpp;
   long x, y; // For initial iterations
-  fpp= fopen("init_solid.dat","w");
+  //fpp= fopen("init_solid.dat","w");
   for (x=0; x<MESHX; x++) {
     for (y=0; y<MESHY; y++) { 
       status[x][y] = 0;         // initialization of status
       if (x == 0){
             status[x][y] = 1;  // The seed for nucleation is a line
       }
-      fprintf(fpp, "%ld %ld %le\n", x, y, status[x][y]*((sqrt((x-(MESHX/2))*(x-(MESHX/2))) + sqrt((y-(MESHY/2))*(y-(MESHY/2))))/2));
+      //fprintf(fpp, "%ld %ld %le\n", x, y, status[x][y]*((sqrt((x-(MESHX/2))*(x-(MESHX/2))) + sqrt((y-(MESHY/2))*(y-(MESHY/2))))/2));
     }
-    fprintf(fpp, "\n");
+    //fprintf(fpp, "\n");
   }
-    fclose(fpp);
+   // fclose(fpp);
  // status[MESHX/2][MESHY/2] = 1;
   
   long xc, yc;
@@ -95,12 +95,12 @@ void main() {
           && ((status[x+1][y]==1) || (status[x-1][y]==1)  \
           ||  (status[x][y-1]==1) || (status[x][y+1]==1)) ) {   // The selection crteria is same i.e. to update if the neighbours are updated
         status[x][y] = 1;
-      checker_stat = 1;
+        checker_stat = 1;
       
         if (xc > rm) {
           rm = xc;
         }
-       // npart++;
+        npart++;
         printf("Number of particles=%ld\n",npart);
       }
     }
