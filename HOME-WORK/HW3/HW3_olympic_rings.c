@@ -69,5 +69,5 @@ void main(){
 					((double)(two_intersection - three_intersection)/(double)(NRAM))*48.0*4 	+ 
 					((double)(one_intersection - two_intersection)/(double)(NRAM))*48.0 			);
 */
-	printf("Total area (COMPUTED) with double counting.. = %.4le\n", ((double)(one_intersection)/(double)(NRAM))*xrange*yrange );
+	printf("Total area (COMPUTED) with double counting.. = %.4le\n", ( ((double)(one_intersection)/(double)(NRAM))*xrange*yrange + ((double)(two_intersection - three_intersection)/(double)(NRAM))*xrange*yrange ) );
 }

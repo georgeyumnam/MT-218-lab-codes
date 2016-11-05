@@ -23,7 +23,7 @@
 ### Area of no intersection..................... = 1.1008e+01
 ### 
 ### Total area (ANALYTIC) with double counting.. = 1.5086e+01
-### Total area (COMPUTED) with double counting.. = 1.3048e+01
+### Total area (COMPUTED) with double counting.. = 1.5085e+01
 ### 
 ###  
 ### 
